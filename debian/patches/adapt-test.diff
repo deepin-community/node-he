@@ -1,0 +1,23 @@
+Description: Change paths for tests
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2019-09-07
+
+--- a/tests/tests.js
++++ b/tests/tests.js
+@@ -11,13 +11,13 @@
+ 		return root.QUnit || (
+ 			root.addEventListener || (root.addEventListener = noop),
+ 			root.setTimeout || (root.setTimeout = noop),
+-			root.QUnit = load('../node_modules/qunitjs/qunit/qunit.js') || root.QUnit,
++			root.QUnit = load('../debian/tests/test_modules/qunitjs/') || root.QUnit,
+ 			addEventListener === noop && delete root.addEventListener,
+ 			root.QUnit
+ 		);
+ 	}());
+ 
+-	var qe = load('../node_modules/qunit-extras/qunit-extras.js');
++	var qe = load('../debian/tests/test_modules/qunit-extras/qunit-extras.js');
+ 	if (qe) {
+ 		qe.runInContext(root);
+ 	}

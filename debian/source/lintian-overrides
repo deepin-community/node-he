@@ -1,0 +1,6 @@
+# false positive
+node-he source: source-is-missing tests/tests.js line length is *
+node-he source: very-long-line-length-in-source-file he.js line length is *
+node-he source: source-contains-prebuilt-javascript-object he.js line length is *
+node-he source: very-long-line-length-in-source-file tests/tests.js line length is *
+node-he source: source-contains-prebuilt-javascript-object tests/tests.js line length is *

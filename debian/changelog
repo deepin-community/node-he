@@ -1,0 +1,53 @@
+node-he (1.2.0-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * source only upload to enable migration
+
+ -- Paul Gevers <elbrus@debian.org>  Mon, 01 Nov 2021 21:00:55 +0100
+
+node-he (1.2.0-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Update renamed lintian tag names in lintian overrides.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+  * Apply multi-arch hints.
+    + node-he: Add Multi-Arch: foreign.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sat, 28 Aug 2021 22:23:42 +0100
+
+node-he (1.2.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Pirate Praveen ]
+  * fix manpage
+  * install data
+  * add override
+
+  [ Utkarsh Gupta ]
+  * New upstream version 1.2.0
+  * Add myself as an uploader
+  * Add d/upstream/metadata
+  * Switch test to pkg-js-tools
+  * Update lintian-overrides
+  * Update d/copyright
+  * Update d/control
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Embed qunitjs and qunit-extras to enable upstream test
+  * Switch install to pkg-js-tools
+  * Fix lintian-overrides
+  * Update debian/copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 07 Sep 2019 19:56:20 +0200
+
+node-he (1.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #874380)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 05 Sep 2017 21:34:35 +0530
