@@ -6,20 +6,20 @@ Uploaders: Pirate Praveen <praveen@debian.org>,
            Utkarsh Gupta <guptautkarsh2102@gmail.com>
 Testsuite: autopkgtest-pkg-nodejs
 Build-Depends:
- debhelper-compat (= 12),
- nodejs,
- libjs-qunit,
- pkg-js-tools (>= 0.9.8~)
-Standards-Version: 4.5.0
+ debhelper-compat (= 13),
+ dh-sequence-nodejs,
+ libjs-qunit <!nocheck>,
+Standards-Version: 4.6.0
 Homepage: https://github.com/mathiasbynens/he
 Vcs-Git: https://salsa.debian.org/js-team/node-he.git
 Vcs-Browser: https://salsa.debian.org/js-team/node-he
+Rules-Requires-Root: no
 
 Package: node-he
 Architecture: all
 Depends:
  ${misc:Depends},
- nodejs
+ nodejs:any
 Multi-Arch: foreign
 Description: robust HTML entities encoder/decoder with full Unicode support
  _he_ (for “HTML entities”) is a robust HTML entity encoder/decoder written in
