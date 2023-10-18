@@ -1,6 +1,12 @@
-# false positive
-node-he source: source-is-missing tests/tests.js line length is *
-node-he source: very-long-line-length-in-source-file he.js line length is *
-node-he source: source-contains-prebuilt-javascript-object he.js line length is *
-node-he source: very-long-line-length-in-source-file tests/tests.js line length is *
-node-he source: source-contains-prebuilt-javascript-object tests/tests.js line length is *
+# test data
+source-is-missing *tests/tests.js*
+source-is-missing *tests/tests.src.js*
+source-contains-prebuilt-javascript-object *he.js*
+source-contains-prebuilt-javascript-object *tests/tests.js*
+source-contains-prebuilt-javascript-object *tests/tests.src.js*
+very-long-line-length-in-source-file *README.md*
+very-long-line-length-in-source-file *debian/tests/test_modules/qunitjs/History.md*
+very-long-line-length-in-source-file *debian/tests/test_modules/qunitjs/addons/themes/gabe.css*
+very-long-line-length-in-source-file *he.js*
+very-long-line-length-in-source-file *tests/tests.js*
+very-long-line-length-in-source-file *tests/tests.src.js*
